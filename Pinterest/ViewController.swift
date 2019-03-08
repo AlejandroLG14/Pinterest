@@ -11,6 +11,7 @@ import Firebase
 
 class ViewController: UIViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
         //add subview
         view.addSubview(inputContainerView)
         view.addSubview(firstButton)
+        view.addSubview(SecondButton)
         inputContainerView.addSubview(nameTextField)
         inputContainerView.addSubview(emailTextField)
         inputContainerView.addSubview(passwordTextField)
@@ -46,6 +48,11 @@ class ViewController: UIViewController {
         firstButton.rightAnchor.constraint(equalTo: inputContainerView.rightAnchor).isActive = true
         
         
+        SecondButton.topAnchor.constraint(equalTo: inputContainerView.bottomAnchor, constant: 20).isActive = true
+        SecondButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        SecondButton.leftAnchor.constraint(equalTo: inputContainerView.leftAnchor).isActive = true
+        SecondButton.rightAnchor.constraint(equalTo: inputContainerView.rightAnchor).isActive = true
+        
         nameTextField.topAnchor.constraint(equalTo: inputContainerView.topAnchor).isActive = true
         nameTextField.widthAnchor.constraint(equalTo: inputContainerView.widthAnchor).isActive = true
         nameTextField.heightAnchor.constraint(equalTo: inputContainerView.heightAnchor, multiplier: 1/3).isActive = true
@@ -59,7 +66,6 @@ class ViewController: UIViewController {
         passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor).isActive = true
         passwordTextField.widthAnchor.constraint(equalTo: inputContainerView.widthAnchor).isActive = true
         passwordTextField.heightAnchor.constraint(equalTo: inputContainerView.heightAnchor, multiplier: 1/3).isActive = true
-        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -108,6 +114,7 @@ class ViewController: UIViewController {
         return view
     }()
     
+    
     lazy var firstButton : UIButton = {
         let ub = UIButton()
         ub.backgroundColor = UIColor(red: 80/255, green: 101/255, blue: 161/255, alpha: 1)
@@ -117,26 +124,42 @@ class ViewController: UIViewController {
         return ub
     }()
     
+    lazy var SecondButton : UIButton = {
+        let ub = UIButton()
+        ub.backgroundColor = UIColor(red: 80/255, green: 101/255, blue: 161/255, alpha: 1)
+        let paddingView: UIView = UIView(frame: CGRect(x: 300, y: 100, width: 30, height: 20))
+        ub.setTitle("Facebook", for: .normal)
+        ub.translatesAutoresizingMaskIntoConstraints = false
+        ub.addTarget(self, action: #selector(handleButton), for: .touchUpInside)
+        return ub
+    }()
+    
     @objc func handleButton(){
-        print ("Hola Mundo")
         
         if let email = emailTextField.text, let pass = passwordTextField.text, let name = nameTextField.text{
-            print(email)
-            print(pass)
+
             Auth.auth().createUser(withEmail: email, password: pass) { (data:AuthDataResult?, error) in
-                var user = data?.user
+                let user = data?.user
                 if error != nil {
-                    print(error)
+                    
+                    print(error.debugDescription)
                 }
-                
                 //Succesful
-                var ref = Database.database().reference(fromURL: "https://pinterest-8f963.firebaseio.com/")
+                let ref = Database.database().reference(fromURL: "https://pinterest-8f963.firebaseio.com/")
                 
                 //Agregar ID
                 if let uid = user?.uid{
-                    var usersRef =
+                    let usersRef =
                         ref.child("users").child(uid)
                     usersRef.updateChildValues(["name" : name, "email" : email, "password" : pass])
+                 
+                    // Mensaje
+                    let message = ref.child("message").child(uid)
+                    message.updateChildValues(["message" : "Hola, esto es un mensaje"])
+                    
+                    // Delete
+                    ref.child("message").child(uid).removeValue()
+                    
                 }
                 
 //                var usersRef = ref.child("users")
