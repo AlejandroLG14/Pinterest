@@ -1,19 +1,19 @@
 //
-//  Contraseña.swift
+//  Usuario.swift
 //  Pinterest
 //
-//  Created by Alejandro Loza on 3/7/19.
+//  Created by Alejandro Loza on 3/13/19.
 //  Copyright © 2019 Alejandro Loza. All rights reserved.
 //
 
 import UIKit
-class Contraseña: UIViewController {
+class Usuario: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         view.addSubview(firstButton)
-        view.addSubview(emailTextField)
+        view.addSubview(usuarioTextField)
         
         view.backgroundColor = UIColor.white
         
@@ -21,14 +21,14 @@ class Contraseña: UIViewController {
         label.center = CGPoint(x: 160, y: 160)
         label.textAlignment = .center
         label.font = UIFont (name: "HelveticaNeue-UltraLight", size: 20)
-        label.text = "¿Cual sera su Contreseña?        "
+        label.text = "¿Cual sera su nombre de Usuario?"
         self.view.addSubview(label)
         
         
-        emailTextField.topAnchor.constraint(equalTo: label.bottomAnchor).isActive = true
-        emailTextField.centerXAnchor.constraint(equalTo: label.centerXAnchor).isActive = true
-        emailTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        emailTextField.widthAnchor.constraint(equalTo: label.widthAnchor, constant: -30).isActive = true
+        usuarioTextField.topAnchor.constraint(equalTo: label.bottomAnchor).isActive = true
+        usuarioTextField.centerXAnchor.constraint(equalTo: label.centerXAnchor).isActive = true
+        usuarioTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        usuarioTextField.widthAnchor.constraint(equalTo: label.widthAnchor, constant: -30).isActive = true
         
         firstButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         firstButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -50,14 +50,14 @@ class Contraseña: UIViewController {
         self.navigationController?.pushViewController(usuario, animated: true)
     }
     
-    let emailTextField : UITextField = {
+    let usuarioTextField : UITextField = {
         let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false
         let paddingView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 20))
         tf.leftView = paddingView
         tf.leftViewMode = .always
         tf.font = UIFont (name: "AlNile-Bold", size: 40)
-        tf.placeholder = "Contraseña"
+        tf.placeholder = "Usuario"
         tf.backgroundColor = .white
         return tf
     }()

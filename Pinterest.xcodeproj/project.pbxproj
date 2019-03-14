@@ -13,6 +13,7 @@
 		D0365458220D0B3D0070269C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0365456220D0B3D0070269C /* Main.storyboard */; };
 		D036545A220D0B3D0070269C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0365459220D0B3D0070269C /* Assets.xcassets */; };
 		D036545D220D0B3D0070269C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D036545B220D0B3D0070269C /* LaunchScreen.storyboard */; };
+		D0BE06F62239F15E00115EB1 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE06F52239F15E00115EB1 /* Usuario.swift */; };
 		D0F3F1D2223202020061F3D6 /* Correo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3F1D1223202020061F3D6 /* Correo.swift */; };
 		D0F3F1D4223209160061F3D6 /* Contraseña.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3F1D3223209160061F3D6 /* Contraseña.swift */; };
 		D0F41333220D1F970043F950 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0F41332220D1F970043F950 /* GoogleService-Info.plist */; };
@@ -31,6 +32,7 @@
 		D0365459220D0B3D0070269C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D036545C220D0B3D0070269C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D036545E220D0B3D0070269C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0BE06F52239F15E00115EB1 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		D0F3F1D1223202020061F3D6 /* Correo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Correo.swift; sourceTree = "<group>"; };
 		D0F3F1D3223209160061F3D6 /* Contraseña.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contraseña.swift"; sourceTree = "<group>"; };
 		D0F41332220D1F970043F950 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				D01BC4C32228BF9B00E7FD6B /* Login.swift */,
 				D0F3F1D1223202020061F3D6 /* Correo.swift */,
 				D0F3F1D3223209160061F3D6 /* Contraseña.swift */,
+				D0BE06F52239F15E00115EB1 /* Usuario.swift */,
 			);
 			path = Pinterest;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				D01BC4C42228BF9B00E7FD6B /* Login.swift in Sources */,
 				D0F3F1D2223202020061F3D6 /* Correo.swift in Sources */,
+				D0BE06F62239F15E00115EB1 /* Usuario.swift in Sources */,
 				D0365455220D0B3D0070269C /* ViewController.swift in Sources */,
 				D0365453220D0B3D0070269C /* AppDelegate.swift in Sources */,
 				D0F3F1D4223209160061F3D6 /* Contraseña.swift in Sources */,
