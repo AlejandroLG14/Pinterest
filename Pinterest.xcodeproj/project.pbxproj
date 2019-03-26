@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0147B6E224874D3006C0BE6 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0147B6D224874D3006C0BE6 /* SignIn.swift */; };
 		D01BC4C42228BF9B00E7FD6B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BC4C32228BF9B00E7FD6B /* Login.swift */; };
 		D0365453220D0B3D0070269C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0365452220D0B3D0070269C /* AppDelegate.swift */; };
 		D0365455220D0B3D0070269C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0365454220D0B3D0070269C /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		556B9FC7582EF88210DD194F /* Pods-Pinterest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinterest.release.xcconfig"; path = "Target Support Files/Pods-Pinterest/Pods-Pinterest.release.xcconfig"; sourceTree = "<group>"; };
 		912CCB5C2594B63E8A7B6BD7 /* Pods_Pinterest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pinterest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB17EB352B3F53B83DE2E17D /* Pods-Pinterest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinterest.debug.xcconfig"; path = "Target Support Files/Pods-Pinterest/Pods-Pinterest.debug.xcconfig"; sourceTree = "<group>"; };
+		D0147B6D224874D3006C0BE6 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		D01BC4C32228BF9B00E7FD6B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		D036544F220D0B3C0070269C /* Pinterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0365452220D0B3D0070269C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				D0F3F1D1223202020061F3D6 /* Correo.swift */,
 				D0F3F1D3223209160061F3D6 /* Contraseña.swift */,
 				D0BE06F52239F15E00115EB1 /* Usuario.swift */,
+				D0147B6D224874D3006C0BE6 /* SignIn.swift */,
 			);
 			path = Pinterest;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				D0F3F1D2223202020061F3D6 /* Correo.swift in Sources */,
 				D0BE06F62239F15E00115EB1 /* Usuario.swift in Sources */,
 				D0365455220D0B3D0070269C /* ViewController.swift in Sources */,
+				D0147B6E224874D3006C0BE6 /* SignIn.swift in Sources */,
 				D0365453220D0B3D0070269C /* AppDelegate.swift in Sources */,
 				D0F3F1D4223209160061F3D6 /* Contraseña.swift in Sources */,
 			);

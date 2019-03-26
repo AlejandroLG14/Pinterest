@@ -80,6 +80,11 @@ class Login: UIViewController {
         self.navigationController?.pushViewController(correo, animated: true)
     }
     
+    @objc func sesionButton (){
+        let signin = SignIn()
+        self.navigationController?.pushViewController(signin, animated: true)
+    }
+    
     lazy var thirdButton : UIButton = {
         let ub = UIButton()
         ub.backgroundColor = UIColor(red: 153/255, green: 186/255, blue: 239/255, alpha: 1)
@@ -93,6 +98,7 @@ class Login: UIViewController {
         ub.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1)
         ub.setTitle("Inicias Sesion", for: .normal)
         ub.translatesAutoresizingMaskIntoConstraints = false
+        ub.addTarget(self, action: #selector(handleButton), for: .touchUpInside)
         return ub
     }()
 }
