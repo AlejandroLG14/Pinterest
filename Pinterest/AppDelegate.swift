@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
 //        window?.rootViewController = UINavigationController(rootViewController: ViewController())
-        window?.rootViewController = UINavigationController(rootViewController: Login())
-        
+//        window?.rootViewController = UINavigationController(rootViewController: Login())
+         window?.rootViewController = UINavigationController(rootViewController: CollectionViewController (collectionViewLayout: UICollectionViewFlowLayout()))
         return true
     }
     

@@ -46,8 +46,8 @@ class Usuario: UIViewController {
     }()
     
     @objc func handleButton (){
-        let usuario = Usuario()
-        self.navigationController?.pushViewController(usuario, animated: true)
+        let view = CollectionViewController()
+        self.navigationController?.pushViewController(view, animated: true)
     }
     
     let usuarioTextField : UITextField = {

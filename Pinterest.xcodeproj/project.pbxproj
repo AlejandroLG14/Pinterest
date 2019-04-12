@@ -14,6 +14,9 @@
 		D0365458220D0B3D0070269C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0365456220D0B3D0070269C /* Main.storyboard */; };
 		D036545A220D0B3D0070269C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0365459220D0B3D0070269C /* Assets.xcassets */; };
 		D036545D220D0B3D0070269C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D036545B220D0B3D0070269C /* LaunchScreen.storyboard */; };
+		D05750A92260051A00646A60 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05750A82260051A00646A60 /* CollectionViewController.swift */; };
+		D05750AB22600C8F00646A60 /* CollectionViewSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05750AA22600C8F00646A60 /* CollectionViewSampleController.swift */; };
+		D05750AF2260172400646A60 /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05750AE2260172400646A60 /* Extensiones.swift */; };
 		D0BE06F62239F15E00115EB1 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE06F52239F15E00115EB1 /* Usuario.swift */; };
 		D0F3F1D2223202020061F3D6 /* Correo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3F1D1223202020061F3D6 /* Correo.swift */; };
 		D0F3F1D4223209160061F3D6 /* Contraseña.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F3F1D3223209160061F3D6 /* Contraseña.swift */; };
@@ -34,6 +37,9 @@
 		D0365459220D0B3D0070269C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D036545C220D0B3D0070269C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D036545E220D0B3D0070269C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05750A82260051A00646A60 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D05750AA22600C8F00646A60 /* CollectionViewSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSampleController.swift; sourceTree = "<group>"; };
+		D05750AE2260172400646A60 /* Extensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
 		D0BE06F52239F15E00115EB1 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		D0F3F1D1223202020061F3D6 /* Correo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Correo.swift; sourceTree = "<group>"; };
 		D0F3F1D3223209160061F3D6 /* Contraseña.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contraseña.swift"; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 		D0365451220D0B3C0070269C /* Pinterest */ = {
 			isa = PBXGroup;
 			children = (
+				D05750AD2260171300646A60 /* extensiones */,
 				D0365452220D0B3D0070269C /* AppDelegate.swift */,
 				D0365454220D0B3D0070269C /* ViewController.swift */,
 				D0365456220D0B3D0070269C /* Main.storyboard */,
@@ -93,8 +100,18 @@
 				D0F3F1D3223209160061F3D6 /* Contraseña.swift */,
 				D0BE06F52239F15E00115EB1 /* Usuario.swift */,
 				D0147B6D224874D3006C0BE6 /* SignIn.swift */,
+				D05750A82260051A00646A60 /* CollectionViewController.swift */,
+				D05750AA22600C8F00646A60 /* CollectionViewSampleController.swift */,
 			);
 			path = Pinterest;
+			sourceTree = "<group>";
+		};
+		D05750AD2260171300646A60 /* extensiones */ = {
+			isa = PBXGroup;
+			children = (
+				D05750AE2260172400646A60 /* Extensiones.swift */,
+			);
+			path = extensiones;
 			sourceTree = "<group>";
 		};
 		ED23FCEC68D784DB92557172 /* Pods */ = {
@@ -236,7 +253,10 @@
 				D01BC4C42228BF9B00E7FD6B /* Login.swift in Sources */,
 				D0F3F1D2223202020061F3D6 /* Correo.swift in Sources */,
 				D0BE06F62239F15E00115EB1 /* Usuario.swift in Sources */,
+				D05750AF2260172400646A60 /* Extensiones.swift in Sources */,
+				D05750AB22600C8F00646A60 /* CollectionViewSampleController.swift in Sources */,
 				D0365455220D0B3D0070269C /* ViewController.swift in Sources */,
+				D05750A92260051A00646A60 /* CollectionViewController.swift in Sources */,
 				D0147B6E224874D3006C0BE6 /* SignIn.swift in Sources */,
 				D0365453220D0B3D0070269C /* AppDelegate.swift in Sources */,
 				D0F3F1D4223209160061F3D6 /* Contraseña.swift in Sources */,
